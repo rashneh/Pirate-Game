@@ -10,7 +10,7 @@ Code is optimized for memory usage and speed efficiency.
 
 Command Line Interface:
 
-usage: ./hunt [options] < inputfile
+$ ./hunt [options] < inputfile > outputfile
 
 Sample outputs generated using:
 
