@@ -38,8 +38,5 @@ Supported [options]
 
 
 Output without options will look like:
-
-'No treasure found after investigating 5 locations.' OR 
-
-'Treasure found at 0,0 with path length 8.'
+'No treasure found after investigating 5 locations.' OR 'Treasure found at 0,0 with path length 8.'
 
