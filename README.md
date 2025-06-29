@@ -7,3 +7,24 @@ While trying to find treasure and create a map, the important terms are investig
 Hunt order can be picked by user through command line. By default the hunt order is North->East->South->West aronnd current location. 
 
 Code is optimized for memory usage and speed efficiency.
+
+Command Line Interface:
+usage: ./hunt [options] < inputfile
+Sample outputs generated using
+$ make hunt
+$ ./hunt -vspL < map1_input.lst.txt > map1_output.txt
+$ ./hunt -vspM < map2_input.map.txt > map2_output.txt
+
+Supported [options]
+--help, -h: Print a useful help message and exit, ignores all other options
+--captain <QUEUE|STACK>, -c <QUEUE|STACK>: The route-finding container used while sailing in the water (if unspecified, captain default is stack)
+--first-mate <QUEUE|STACK>, -f <QUEUE|STACK>: The route-finding container used while searching on land (if unspecified, first-mate default is queue)
+--hunt-order <ORDER>, -o <ORDER>: The order of discovery of adjacent tiles around the current location, a four character string using exactly one of each of the four characters ‘N’, ‘E’, ‘S’, and ‘W’ (if unspecified, the default order is: North->East->South->West)
+--verbose, -v: Print verbose output while searching
+--stats, -s: Display statistics after the search is complete
+--show-path <M|L>, -p <M|L>: Display a treasure map or the list of locations that describe the path
+
+Output without options will look like:
+'No treasure found after investigating 5 locations.' OR 
+'Treasure found at 0,0 with path length 8.'
+
