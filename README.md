@@ -10,9 +10,12 @@ Code is optimized for memory usage and speed efficiency.
 
 Command Line Interface:
 usage: ./hunt [options] < inputfile
-Sample outputs generated using
+Sample outputs generated using:
+
 $ make hunt
+
 $ ./hunt -vspL < map1_input.lst.txt > map1_output.txt
+
 $ ./hunt -vspM < map2_input.map.txt > map2_output.txt
 
 Supported [options]
