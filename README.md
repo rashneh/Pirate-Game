@@ -1,5 +1,5 @@
-# Pirate-Game
-The Pirate Game project simulates an algorithm to travel through islands in an expanse of water to find treasure. Project includes backend data structures, character structs, txt files simulating maps with hidden treasure, and search algorithms automating the roles of the two characters. No UI.
+# Pirate-Game-Player
+The Pirate Game project simulates a map of islands in an expanse of water to find treasure. A pirate and first-mate character have to work together to find the trasure hidden on one of the islands. This project simulates a bot player that uses various search algorithms to work through the map and try to find the treasure. Project includes backend data structures, character structs, txt files simulating maps with hidden treasure, and search algorithms automating the roles of the two characters. No UI.
 
 The program will receive a txt file that will represent a map. The 'Captain' struct will travel from island to island, moving only over water locations that are represented on txt files with a '.'. As soon as land is discovered while sailing, a search party is put ashore before any other discovery is attempted. Once put ashore to lead a search party, the 'First Mate' character struct, will search all available land with a separate log and plans before returning to the ship, moving only over land locations represented on txt with 'o'. Any water (inland or open ocean) encountered by the search party is completely ignored. Treasure represented using '$'. Both Captain and First Mate are unable to move over impassable terrain '#'.
 
@@ -19,6 +19,11 @@ $ ./hunt -vspL < map1_input.lst.txt > map1_output.txt
 
 $ ./hunt -vspM < map2_input.map.txt > map2_output.txt
 
+Output without options will look like:
+
+'No treasure found after investigating 5 locations.' OR 'Treasure found at 0,0 with path length 8.'
+
+
 Supported [options]
 
 --help, -h: Print a useful help message and exit, ignores all other options
@@ -34,8 +39,4 @@ Supported [options]
 --stats, -s: Display statistics after the search is complete
 
 --show-path <M|L>, -p <M|L>: Display a treasure map or the list of locations that describe the path
-
-
-Output without options will look like:
-'No treasure found after investigating 5 locations.' OR 'Treasure found at 0,0 with path length 8.'
 
