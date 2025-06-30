@@ -11,8 +11,6 @@ Command Line Interface:
 
 $ ./hunt [options] < inputfile > outputfile
 
-
-
 Sample outputs generated using:
 
 $ make hunt
@@ -23,10 +21,13 @@ $ ./hunt -vspM < map2_input.map.txt > map2_output.txt
 
 Output without options will look like:
 
-'No treasure found after investigating 5 locations.' OR 'Treasure found at 0,0 with path length 8.'
+$ No treasure found after investigating 5 locations.
+
+$ Treasure found at 0,0 with path length 8.
 
 
-Supported [options]
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--Supported [options]
 
 --help, -h: Print a useful help message and exit, ignores all other options
 
