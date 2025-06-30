@@ -7,13 +7,11 @@ While trying to find treasure and create a map, the important terms are investig
 
 Code is optimized for memory usage and speed efficiency.
 
-Command Line Interface:
+Command Line Interface (executable named 'hunt'):
 
 $ ./hunt [options] < inputfile > outputfile
 
 Sample outputs generated using:
-
-$ make hunt
 
 $ ./hunt -vspL < map1_input.lst.txt > map1_output.txt
 
