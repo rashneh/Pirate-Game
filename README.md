@@ -11,6 +11,8 @@ Command Line Interface:
 
 $ ./hunt [options] < inputfile > outputfile
 
+
+
 Sample outputs generated using:
 
 $ make hunt
