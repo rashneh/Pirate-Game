@@ -41,3 +41,6 @@ $ Treasure found at 0,0 with path length 8.
 
 --show-path <M|L>, -p <M|L>: Display a treasure map or the list of locations that describe the path
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Designed as part of EECS 281 (Data Structures and Algorithms) at the University of Michigan.
+
